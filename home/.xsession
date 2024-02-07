@@ -48,6 +48,9 @@ chromium-browser \
   --window-position=9000,9000 \
   --disable-infobars \
   --check-for-update-interval=1 --simulate-critical-update \
+  --enable-accelerated-video-decode --enable-gpu-rasterization \
+  --enable-oop-rasterization --ignore-gpu-blocklist \
+  --disable-features=OverscrollHistoryNavigation --disable-pinch \
   --app=$URL &
 # See https://github.com/futurice/chilipie-kiosk/issues/99#issuecomment-597119842 for the need for the fishy-sounding "--check-for-update-interval=1 --simulate-critical-update" switches; TODO: remove when not needed
 
